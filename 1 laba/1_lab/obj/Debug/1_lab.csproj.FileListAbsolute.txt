@@ -1,0 +1,8 @@
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\1_lab\bin\Debug\1_lab.exe.config
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\1_lab\bin\Debug\1_lab.exe
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\1_lab\bin\Debug\1_lab.pdb
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\1_lab\obj\Debug\1_lab.csproj.AssemblyReference.cache
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\1_lab\obj\Debug\1_lab.csproj.CoreCompileInputs.cache
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\1_lab\obj\Debug\1_lab.exe
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\1_lab\obj\Debug\1_lab.pdb
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\1_lab\obj\Debug\1_lab.exe.config
