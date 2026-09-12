@@ -4,36 +4,30 @@ namespace Lab1
 {
     public class Program 
     {
-        static void Main()
+        public static void Main()
         {
-            while (true) 
+            while (true)
             {
                 Console.WriteLine("\n _ __ ___   ___ _ __  _   _ \r\n| '_ ` _ \\ / _ \\ '_ \\| | | |\r\n| | | | | |  __/ | | | |_| |\r\n|_| |_| |_|\\___|_| |_|\\__,_|");
                 Console.WriteLine("TaskOne - 1");
                 Console.WriteLine("TaskTwo - 2");
                 Console.WriteLine("TaskThree - 3");
                 Console.WriteLine("Exit - 0");
-                Console.Write("Enter number: ");
 
-                int q = 0;
-                while (!int.TryParse(Console.ReadLine(), out q))
-                {
-                    Console.Write("Invalid input! Enter number: ");
-                }
-
-                switch (q) 
+                int menuChoice = ReadInt("Enter number: ");
+                switch (menuChoice)
                 {
                     case 1:
-                        FirstTask objectTaskOne = new FirstTask();
-                        objectTaskOne.Run();
+                        FirstTask firstTask = new FirstTask();
+                        firstTask.Run();
                         break;
                     case 2:
-                        SecondTask objectTaskTwo = new SecondTask();
-                        objectTaskTwo.Run();
+                        SecondTask secondTask = new SecondTask();
+                        secondTask.Run();
                         break;
                     case 3:
-                        ThirdTask objectTaskThree = new ThirdTask();
-                        objectTaskThree.Run();
+                        ThirdTask thirdTask = new ThirdTask();
+                        thirdTask.Run();
                         break;
                     case 0:
                         Console.WriteLine("The program is completed.");
@@ -44,37 +38,49 @@ namespace Lab1
                 }
             }
         }
+
+        public static int ReadInt(string message)
+        {
+            int value;
+            Console.Write(message);
+            while (!int.TryParse(Console.ReadLine(), out value))
+            {
+                Console.Write("Error! Please re-enter: ");
+            }
+            return value;
+        }
+
+        public static double ReadDouble(string message)
+        {
+            double value;
+            Console.Write(message);
+            while (!double.TryParse(Console.ReadLine(), out value))
+            {
+                Console.Write("Error! Please re-enter: ");
+            }
+            return value;
+        }
     }
 
     public class FirstTask
     {
         public void Run()
         {
-            Console.Write("n? ");
-            int firstNumber = 0;
-            while (!int.TryParse(Console.ReadLine(), out firstNumber))
-            {
-                Console.Write("Error! Please re-enter n: ");
-            }
+            int n = Program.ReadInt("n? ");
 
-            Console.Write("m? ");
-            int secondNumber = 0;
-            while (!int.TryParse(Console.ReadLine(), out secondNumber))
-            {
-                Console.Write("Error! Please re-enter m: ");
-            }
+            int m = Program.ReadInt("m? ");
 
-            int firstNumberCopy = firstNumber;
-            int result1 = ProductWithPostIncrement(firstNumberCopy, secondNumber);
-            Console.WriteLine($"n={firstNumberCopy}  m={secondNumber}  n++*m = {result1}");
+            int nForProduct = n;
+            int productResult = GetProductWithPostIncrement(nForProduct, m);
+            Console.WriteLine($"n={nForProduct}  m={m}  n++*m = {productResult}");
 
-            int firstNumberCopy2 = firstNumber;
-            bool result2 = LessThanWithPostIncrement(firstNumberCopy2, secondNumber);
-            Console.WriteLine($"n={firstNumberCopy2}  m={secondNumber}  n++<m = {result2}");
+            int nForComparison = n;
+            bool isLess = IsLessThanWithPostIncrement(nForComparison, m);
+            Console.WriteLine($"n={nForComparison}  m={m}  n++<m = {isLess}");
 
-            int secondNumberCopy = secondNumber;
-            bool result3 = GreaterThanWithPreDecrement(firstNumber, secondNumberCopy);
-            Console.WriteLine($"m={secondNumberCopy}  n={firstNumber}  --m>n = {result3}");
+            int mForComparison = m;
+            bool isGreater = IsGreaterThanWithPreDecrement(n, mForComparison);
+            Console.WriteLine($"m={mForComparison}  n={n}  --m>n = {isGreater}");
 
             for (int x = -10; x < 10; x++)
             {
@@ -84,27 +90,27 @@ namespace Lab1
                 }
                 else
                 {
-                    Console.WriteLine($"x={x,3}: {PowerWithRoot(x)}");
+                    Console.WriteLine($"x={x,3}: {CalculatePowerWithRoot(x)}");
                 }
             }
         }
 
-        private int ProductWithPostIncrement(int n, int m)
+        private int GetProductWithPostIncrement(int n, int m)
         {
             return n++ * m;
         }
 
-        private bool LessThanWithPostIncrement(int n, int m)
+        private bool IsLessThanWithPostIncrement(int n, int m)
         {
             return n++ < m;
         }
 
-        private bool GreaterThanWithPreDecrement(int n, int m)
+        private bool IsGreaterThanWithPreDecrement(int n, int m)
         {
             return --m > n;
         }
 
-        private double PowerWithRoot(double x)
+        private double CalculatePowerWithRoot(double x)
         {
             return Math.Pow(2, -x) * Math.Sqrt(x + Math.Pow(Math.Abs(x), 1.0 / 4.0));
         }
@@ -114,32 +120,20 @@ namespace Lab1
     {
         public void Run() 
         {
-            Console.WriteLine("Enter value pointX: ");
-            double pointX = 0d;
-            while (!double.TryParse(Console.ReadLine(), out pointX))
-            {
-                Console.Write("Error! Please re-enter the number: ");
-            }
+            double pointX = Program.ReadDouble("Enter value pointX: ");
 
-            Console.WriteLine("Enter value pointY: ");
-            double pointY = 0d;
-            while (!double.TryParse(Console.ReadLine(), out pointY))
-            {
-                Console.Write("Error! Please re-enter the number: ");
-            }
+            double pointY = Program.ReadDouble("Enter value pointY: ");
 
             bool isInArea = IsPointInArea(pointX, pointY);
-            Console.WriteLine(isInArea ? "The point belongs to the shaded area." : "The point does not belong to the shaded area.");
+            Console.WriteLine(isInArea
+                ? "The point belongs to the shaded area." 
+                : "The point does not belong to the shaded area.");
         }
 
-        private bool IsPointInArea(double pointX, double pointY) 
+        private bool IsPointInArea(double pointX, double pointY)
         {
-            if ((pointX >= 0 && pointY <= 0 && pointY >= 5.0 / 3.0 * pointX - 5) 
-                || (pointX <= 0 && pointY <= (5.0 / 7.0) * pointX + 5 && pointY >= (-5.0 / 7.0) * pointX - 5)) 
-            {
-                return true;
-            }
-            return false;
+            return (pointX >= 0 && pointY <= 0 && pointY >= 5.0 / 3.0 * pointX - 5)
+                || (pointX <= 0 && pointY <= 5.0 / 7.0 * pointX + 5 && pointY >= -5.0 / 7.0 * pointX - 5);
         }
     }
 
@@ -147,45 +141,43 @@ namespace Lab1
     {
         public void Run()
         {
-            float a1 = 1000f;
-            float b1 = 0.0001f;
-            Console.WriteLine("float = " + CalculateFloat(a1, b1));
+            float aFloat = 1000f;
+            float bFloat = 0.0001f;
+            Console.WriteLine("float = " + CalculateExpressionFloat(aFloat, bFloat));
 
-            double a2 = 1000;
-            double b2 = 0.0001;
-            Console.WriteLine("double = " + CalculateDouble(a2, b2));
+            double aDouble = 1000;
+            double bDouble = 0.0001;
+            Console.WriteLine("double = " + CalculateExpressionDouble(aDouble, bDouble));
         }
 
-        private float CalculateFloat(float a1, float b1)
+        private float CalculateExpressionFloat(float a, float b)
         {
-            float diff = a1 - b1;
-            float diffCubed = diff * diff * diff;
-            float aCubed = a1 * a1 * a1;
-            float numerator = diffCubed - aCubed;
+            float difference = a - b;
+            float differenceCubed = difference * difference * difference;
+            float aCubed = a * a * a;
+            float numerator = differenceCubed - aCubed;
 
-            float bSquared = b1 * b1;
-            float bCubed = b1 * b1 * b1;
-            float aSquared = a1 * a1;
-            float denominator = 3 * a1 * bSquared - bCubed - 3 * aSquared * b1;
+            float bSquared = b * b;
+            float bCubed = b * b * b;
+            float aSquared = a * a;
+            float denominator = 3 * a * bSquared - bCubed - 3 * aSquared * b;
 
-            float result = numerator / denominator;
-            return result;
+            return numerator / denominator;
         }
 
-        private double CalculateDouble(double a2, double b2)
+        private double CalculateExpressionDouble(double a, double b)
         {
-            double diff = a2 - b2;
-            double diffCubed = Math.Pow(diff, 3);
-            double aCubed = Math.Pow(a2, 3);
-            double numerator = diffCubed - aCubed;
+            double difference = a - b;
+            double differenceCubed = Math.Pow(difference, 3);
+            double aCubed = Math.Pow(a, 3);
+            double numerator = differenceCubed - aCubed;
 
-            double bSquared = Math.Pow(b2, 2);
-            double bCubed = Math.Pow(b2, 3);
-            double aSquared = Math.Pow(a2, 2);
-            double denominator = 3 * a2 * bSquared - bCubed - 3 * aSquared * b2;
+            double bSquared = Math.Pow(b, 2);
+            double bCubed = Math.Pow(b, 3);
+            double aSquared = Math.Pow(a, 2);
+            double denominator = 3 * a * bSquared - bCubed - 3 * aSquared * b;
 
-            double result = numerator / denominator;
-            return result;
+            return numerator / denominator;
         }
     }
 }
