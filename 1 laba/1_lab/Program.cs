@@ -45,7 +45,7 @@ namespace Lab1
             Console.Write(message);
             while (!int.TryParse(Console.ReadLine(), out value))
             {
-                Console.Write("Ошибка! Пожалуйста, введите снова.: ");
+                Console.Write("Ошибка! Пожалуйста, введите снова: ");
             }
             return value;
         }
@@ -56,7 +56,7 @@ namespace Lab1
             Console.Write(message);
             while (!double.TryParse(Console.ReadLine(), out value))
             {
-                Console.Write("Ошибка! Пожалуйста, введите снова.: ");
+                Console.Write("Ошибка! Пожалуйста, введите снова: ");
             }
             return value;
         }
@@ -82,17 +82,15 @@ namespace Lab1
             bool isGreater = IsGreaterThanWithPreDecrement(n, mForComparison);
             Console.WriteLine($"m={mForComparison}  n={n}  --m>n = {isGreater}");
 
-            for (int x = -10; x < 10; x++)
+            int x = ReadDouble("Введите число x: ");
+            if (x < 0) 
             {
-                if (x < 0)
-                {
-                    Console.WriteLine($"x={x,3}: Ошибка! Это значение нельзя использовать..");
-                }
-                else
+                Console.WriteLine($"x={x,3}: Ошибка! Это значение нельзя использовать.");
+            }
+            else
                 {
                     Console.WriteLine($"x={x,3}: {CalculatePowerWithRoot(x)}");
                 }
-            }
         }
 
         private int GetProductWithPostIncrement(int n, int m)
