@@ -82,7 +82,7 @@ namespace Lab1
             bool isGreater = IsGreaterThanWithPreDecrement(n, mForComparison);
             Console.WriteLine($"m={mForComparison}  n={n}  --m>n = {isGreater}");
 
-            int x = ReadDouble("Введите число x: ");
+            int x = Program.ReadInt("Введите число x: ");
             if (x < 0) 
             {
                 Console.WriteLine($"x={x,3}: Ошибка! Это значение нельзя использовать.");
