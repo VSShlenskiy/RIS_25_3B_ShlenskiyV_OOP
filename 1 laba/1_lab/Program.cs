@@ -9,12 +9,12 @@ namespace Lab1
             while (true)
             {
                 Console.WriteLine("\n _ __ ___   ___ _ __  _   _ \r\n| '_ ` _ \\ / _ \\ '_ \\| | | |\r\n| | | | | |  __/ | | | |_| |\r\n|_| |_| |_|\\___|_| |_|\\__,_|");
-                Console.WriteLine("TaskOne - 1");
-                Console.WriteLine("TaskTwo - 2");
-                Console.WriteLine("TaskThree - 3");
-                Console.WriteLine("Exit - 0");
+                Console.WriteLine("Первое Задание - 1");
+                Console.WriteLine("Второе Задание - 2");
+                Console.WriteLine("Третие Задание - 3");
+                Console.WriteLine("Выход - 0");
 
-                int menuChoice = ReadInt("Enter number: ");
+                int menuChoice = ReadInt("Введите число: ");
                 switch (menuChoice)
                 {
                     case 1:
@@ -30,10 +30,10 @@ namespace Lab1
                         thirdTask.Run();
                         break;
                     case 0:
-                        Console.WriteLine("The program is completed.");
+                        Console.WriteLine("Работа программы завершена.");
                         return;
                     default:
-                        Console.WriteLine("Invalid input! Please select an item from the menu.");
+                        Console.WriteLine("Некоректный ввод! Пожалуйста, выберите пункт из меню.");
                         break;
                 }
             }
@@ -45,7 +45,7 @@ namespace Lab1
             Console.Write(message);
             while (!int.TryParse(Console.ReadLine(), out value))
             {
-                Console.Write("Error! Please re-enter: ");
+                Console.Write("Ошибка! Пожалуйста, введите снова.: ");
             }
             return value;
         }
@@ -56,7 +56,7 @@ namespace Lab1
             Console.Write(message);
             while (!double.TryParse(Console.ReadLine(), out value))
             {
-                Console.Write("Error! Please re-enter: ");
+                Console.Write("Ошибка! Пожалуйста, введите снова.: ");
             }
             return value;
         }
@@ -86,7 +86,7 @@ namespace Lab1
             {
                 if (x < 0)
                 {
-                    Console.WriteLine($"x={x,3}: Error! This value cannot be used.");
+                    Console.WriteLine($"x={x,3}: Ошибка! Это значение нельзя использовать..");
                 }
                 else
                 {
@@ -120,14 +120,14 @@ namespace Lab1
     {
         public void Run() 
         {
-            double pointX = Program.ReadDouble("Enter value pointX: ");
+            double pointX = Program.ReadDouble("Введите значение pointX: ");
 
-            double pointY = Program.ReadDouble("Enter value pointY: ");
+            double pointY = Program.ReadDouble("Введите значение pointY: ");
 
             bool isInArea = IsPointInArea(pointX, pointY);
             Console.WriteLine(isInArea
-                ? "The point belongs to the shaded area." 
-                : "The point does not belong to the shaded area.");
+                ? "Точка принадлежит заштрихованной области."
+                : "Точка не принадлежит заштрихованной области.");
         }
 
         private bool IsPointInArea(double pointX, double pointY)
