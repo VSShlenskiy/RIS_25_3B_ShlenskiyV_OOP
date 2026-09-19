@@ -2,7 +2,7 @@
 
 namespace Lab1
 {
-    public class Program 
+    public class Program
     {
         public static void Main()
         {
@@ -11,23 +11,20 @@ namespace Lab1
                 Console.WriteLine("\n _ __ ___   ___ _ __  _   _ \r\n| '_ ` _ \\ / _ \\ '_ \\| | | |\r\n| | | | | |  __/ | | | |_| |\r\n|_| |_| |_|\\___|_| |_|\\__,_|");
                 Console.WriteLine("Первое Задание - 1");
                 Console.WriteLine("Второе Задание - 2");
-                Console.WriteLine("Третие Задание - 3");
+                Console.WriteLine("Третье Задание - 3");
                 Console.WriteLine("Выход - 0");
 
-                int menuChoice = ReadInt("Введите число: ");
-                switch (menuChoice)
+                int choice = ReadInt("Введите число: ");
+                switch (choice)
                 {
                     case 1:
-                        FirstTask firstTask = new FirstTask();
-                        firstTask.Run();
+                        new Task1().Run();
                         break;
                     case 2:
-                        SecondTask secondTask = new SecondTask();
-                        secondTask.Run();
+                        new Task2().Run();
                         break;
                     case 3:
-                        ThirdTask thirdTask = new ThirdTask();
-                        thirdTask.Run();
+                        new Task3().Run();
                         break;
                     case 0:
                         Console.WriteLine("Работа программы завершена.");
@@ -39,143 +36,141 @@ namespace Lab1
             }
         }
 
-        public static int ReadInt(string message)
+        public static int ReadInt(string msg)
         {
-            int value;
-            Console.Write(message);
-            while (!int.TryParse(Console.ReadLine(), out value))
+            int val;
+            Console.Write(msg);
+            while (!int.TryParse(Console.ReadLine(), out val))
             {
                 Console.Write("Ошибка! Пожалуйста, введите снова: ");
             }
-            return value;
+            return val;
         }
 
-        public static double ReadDouble(string message)
+        public static double ReadDouble(string msg)
         {
-            double value;
-            Console.Write(message);
-            while (!double.TryParse(Console.ReadLine(), out value))
+            double val;
+            Console.Write(msg);
+            while (!double.TryParse(Console.ReadLine(), out val))
             {
                 Console.Write("Ошибка! Пожалуйста, введите снова: ");
             }
-            return value;
+            return val;
         }
     }
 
-    public class FirstTask
+    public class Task1
     {
         public void Run()
         {
             int n = Program.ReadInt("n? ");
-
             int m = Program.ReadInt("m? ");
 
-            int nForProduct = n;
-            int productResult = GetProductWithPostIncrement(nForProduct, m);
-            Console.WriteLine($"n={nForProduct}  m={m}  n++*m = {productResult}");
+            int n1 = n;
+            int mul = Mul(n1, m);
+            Console.WriteLine($"n={n1}  m={m}  n++*m = {mul}");
 
-            int nForComparison = n;
-            bool isLess = IsLessThanWithPostIncrement(nForComparison, m);
-            Console.WriteLine($"n={nForComparison}  m={m}  n++<m = {isLess}");
+            int n2 = n;
+            bool less = Less(n2, m);
+            Console.WriteLine($"n={n2}  m={m}  n++<m = {less}");
 
-            int mForComparison = m;
-            bool isGreater = IsGreaterThanWithPreDecrement(n, mForComparison);
-            Console.WriteLine($"m={mForComparison}  n={n}  --m>n = {isGreater}");
+            int m2 = m;
+            bool greater = Greater(n, m2);
+            Console.WriteLine($"m={m2}  n={n}  --m>n = {greater}");
 
             int x = Program.ReadInt("Введите число x: ");
-            if (x < 0) 
+            if (x < 0)
             {
                 Console.WriteLine($"x={x,3}: Ошибка! Это значение нельзя использовать.");
             }
             else
-                {
-                    Console.WriteLine($"x={x,3}: {CalculatePowerWithRoot(x)}");
-                }
+            {
+                Console.WriteLine($"x={x,3}: {Calc(x)}");
+            }
         }
 
-        private int GetProductWithPostIncrement(int n, int m)
+        private int Mul(int n, int m)
         {
             return n++ * m;
         }
 
-        private bool IsLessThanWithPostIncrement(int n, int m)
+        private bool Less(int n, int m)
         {
             return n++ < m;
         }
 
-        private bool IsGreaterThanWithPreDecrement(int n, int m)
+        private bool Greater(int n, int m)
         {
             return --m > n;
         }
 
-        private double CalculatePowerWithRoot(double x)
+        private double Calc(double x)
         {
             return Math.Pow(2, -x) * Math.Sqrt(x + Math.Pow(Math.Abs(x), 1.0 / 4.0));
         }
     }
 
-    public class SecondTask 
+    public class Task2
     {
-        public void Run() 
+        public void Run()
         {
-            double pointX = Program.ReadDouble("Введите значение pointX: ");
+            double x = Program.ReadDouble("Введите значение pointX: ");
+            double y = Program.ReadDouble("Введите значение pointY: ");
 
-            double pointY = Program.ReadDouble("Введите значение pointY: ");
-
-            bool isInArea = IsPointInArea(pointX, pointY);
-            Console.WriteLine(isInArea
+            bool inside = InArea(x, y);
+            Console.WriteLine(inside
                 ? "Точка принадлежит заштрихованной области."
                 : "Точка не принадлежит заштрихованной области.");
         }
 
-        private bool IsPointInArea(double pointX, double pointY)
+        private bool InArea(double x, double y)
         {
-            return (pointX >= 0 && pointY <= 0 && pointY >= 5.0 / 3.0 * pointX - 5)
-                || (pointX <= 0 && pointY <= 5.0 / 7.0 * pointX + 5 && pointY >= -5.0 / 7.0 * pointX - 5);
+            return (x >= 0 && y <= 0 && y >= 5.0 / 3.0 * x - 5)
+                || (x <= 0 && y <= 5.0 / 7.0 * x + 5 && y >= -5.0 / 7.0 * x - 5);
         }
     }
 
-    public class ThirdTask
+    public class Task3
     {
         public void Run()
         {
-            float aFloat = 1000f;
-            float bFloat = 0.0001f;
-            Console.WriteLine("float = " + CalculateExpressionFloat(aFloat, bFloat));
+            float a1 = 1000f;
+            float b1 = 0.0001f;
+            Console.WriteLine("float = " + CalcF(a1, b1));
 
-            double aDouble = 1000;
-            double bDouble = 0.0001;
-            Console.WriteLine("double = " + CalculateExpressionDouble(aDouble, bDouble));
+            double a2 = 1000;
+            double b2 = 0.0001;
+            Console.WriteLine("double = " + CalcD(a2, b2));
         }
 
-        private float CalculateExpressionFloat(float a, float b)
+        private float CalcF(float a, float b)
         {
-            float difference = a - b;
-            float differenceCubed = difference * difference * difference;
-            float aCubed = a * a * a;
-            float numerator = differenceCubed - aCubed;
+            float d = a - b;
+            float d3 = d * d * d;
+            float a3 = a * a * a;
+            float num = d3 - a3;
 
-            float bSquared = b * b;
-            float bCubed = b * b * b;
-            float aSquared = a * a;
-            float denominator = 3 * a * bSquared - bCubed - 3 * aSquared * b;
+            float b2 = b * b;
+            float b3 = b * b * b;
+            float a2 = a * a;
+            float den = 3 * a * b2 - b3 - 3 * a2 * b;
 
-            return numerator / denominator;
+            return num / den;
         }
 
-        private double CalculateExpressionDouble(double a, double b)
+        private double CalcD(double a, double b)
         {
-            double difference = a - b;
-            double differenceCubed = Math.Pow(difference, 3);
-            double aCubed = Math.Pow(a, 3);
-            double numerator = differenceCubed - aCubed;
+            double d = a - b;
+            double d3 = Math.Pow(d, 3);
+            double a3 = Math.Pow(a, 3);
+            double num = d3 - a3;
 
-            double bSquared = Math.Pow(b, 2);
-            double bCubed = Math.Pow(b, 3);
-            double aSquared = Math.Pow(a, 2);
-            double denominator = 3 * a * bSquared - bCubed - 3 * aSquared * b;
+            double b2 = Math.Pow(b, 2);
+            double b3 = Math.Pow(b, 3);
+            double a2 = Math.Pow(a, 2);
+            double den = 3 * a * b2 - b3 - 3 * a2 * b;
 
-            return numerator / denominator;
+            return num / den;
         }
     }
 }
