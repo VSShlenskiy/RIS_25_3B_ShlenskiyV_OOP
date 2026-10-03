@@ -42,17 +42,12 @@ namespace Laba2
 
         public double GetX(int i)
         {
-            return A + i * Step();
+            return A + i * (B - A) / K;
         }
 
         public double Formula(double x)
         {
             return (1 - x * x / 2) * Math.Cos(x) - x / 2 * Math.Sin(x);
-        }
-
-        public double Step()
-        {
-            return (B - A) / K;
         }
     }
 
