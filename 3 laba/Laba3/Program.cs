@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Laba2
 {
@@ -6,48 +6,25 @@ namespace Laba2
     {
         static void Main()
         {
-            int K;
-            Console.Write("Введите K: ");
-            while (!int.TryParse(Console.ReadLine(), out K) || K <= 0)
-            {
-                Console.WriteLine("Неверно введено K. Попробуйте ещё раз: ");
-            }
-
-            Option option = new Option();
-            option.K = K;
+            int K = 10;
+            double A = 0.1;
+            double B = 1.0;
+            int N = 35;
+            double Eps = 0.0001;
 
             Console.WriteLine("X\t\tSN\t\tSE\t\tY");
 
             for (int i = 0; i <= K; i++)
             {
-                double x = option.GetX(i);
-                Calculator calc = new Calculator(x, option.N, option.Eps);
+                double x = A + i * (B - A) / K;
+                Calculator calc = new Calculator(x, N, Eps);
 
                 double SN = calc.SumN();
                 double SE = calc.SumEps();
-                double Y = option.Formula(x);
+                double Y = (1 - x * x / 2) * Math.Cos(x) - x / 2 * Math.Sin(x);
 
                 Console.WriteLine($"X = {x:F4}  SN = {SN:F6}  SE = {SE:F6}  Y = {Y:F6}");
             }
-        }
-    }
-
-    class Option
-    {
-        private double A = 0.1;
-        private double B = 1.0;
-        public int K;
-        public int N = 35;
-        public double Eps = 0.0001;
-
-        public double GetX(int i)
-        {
-            return A + i * (B - A) / K;
-        }
-
-        public double Formula(double x)
-        {
-            return (1 - x * x / 2) * Math.Cos(x) - x / 2 * Math.Sin(x);
         }
     }
 
@@ -94,8 +71,8 @@ namespace Laba2
             if (m == 0)
                 return 1.0;
 
-            double sign = (m % 2 == 0) 
-                ? 1.0 
+            double sign = (m % 2 == 0)
+                ? 1.0
                 : -1.0;
             double power = Math.Pow(X, 2 * m);
             double fact = Factorial(2 * m);
