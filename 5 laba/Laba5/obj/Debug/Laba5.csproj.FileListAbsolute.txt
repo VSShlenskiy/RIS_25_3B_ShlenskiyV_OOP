@@ -1,0 +1,8 @@
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\5 laba\Laba5\bin\Debug\Laba5.exe.config
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\5 laba\Laba5\bin\Debug\Laba5.exe
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\5 laba\Laba5\bin\Debug\Laba5.pdb
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\5 laba\Laba5\obj\Debug\Laba5.csproj.AssemblyReference.cache
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\5 laba\Laba5\obj\Debug\Laba5.csproj.CoreCompileInputs.cache
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\5 laba\Laba5\obj\Debug\Laba5.exe
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\5 laba\Laba5\obj\Debug\Laba5.pdb
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\5 laba\Laba5\obj\Debug\Laba5.exe.config
