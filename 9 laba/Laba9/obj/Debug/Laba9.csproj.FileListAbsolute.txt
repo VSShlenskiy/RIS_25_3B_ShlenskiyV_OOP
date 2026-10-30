@@ -1,0 +1,7 @@
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\9 laba\Laba9\obj\Debug\Laba9.csproj.AssemblyReference.cache
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\9 laba\Laba9\obj\Debug\Laba9.csproj.CoreCompileInputs.cache
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\9 laba\Laba9\bin\Debug\Laba9.exe.config
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\9 laba\Laba9\bin\Debug\Laba9.exe
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\9 laba\Laba9\bin\Debug\Laba9.pdb
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\9 laba\Laba9\obj\Debug\Laba9.exe
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\9 laba\Laba9\obj\Debug\Laba9.pdb
