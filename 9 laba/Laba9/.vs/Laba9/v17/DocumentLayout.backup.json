@@ -1,32 +1,15 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\repositories\\RIS_25_3B_ShlenskiyV_OOP\\9 laba\\Laba9\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{9A879382-3AFB-4518-80CB-8A44948AAB3A}|Laba9.Tests\\Laba9.Tests.csproj|d:\\repositories\\ris_25_3b_shlenskiyv_oop\\9 laba\\laba9\\laba9.tests\\timetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A879382-3AFB-4518-80CB-8A44948AAB3A}|Laba9.Tests\\Laba9.Tests.csproj|solutionrelative:laba9.tests\\timetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A879382-3AFB-4518-80CB-8A44948AAB3A}|Laba9.Tests\\Laba9.Tests.csproj|d:\\repositories\\ris_25_3b_shlenskiyv_oop\\9 laba\\laba9\\laba9.tests\\timearraytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A879382-3AFB-4518-80CB-8A44948AAB3A}|Laba9.Tests\\Laba9.Tests.csproj|solutionrelative:laba9.tests\\timearraytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A879382-3AFB-4518-80CB-8A44948AAB3A}|Laba9.Tests\\Laba9.Tests.csproj|d:\\repositories\\ris_25_3b_shlenskiyv_oop\\9 laba\\laba9\\laba9.tests\\programtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A879382-3AFB-4518-80CB-8A44948AAB3A}|Laba9.Tests\\Laba9.Tests.csproj|solutionrelative:laba9.tests\\programtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A879382-3AFB-4518-80CB-8A44948AAB3A}|Laba9.Tests\\Laba9.Tests.csproj|d:\\repositories\\ris_25_3b_shlenskiyv_oop\\9 laba\\laba9\\laba9.tests\\assertex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A879382-3AFB-4518-80CB-8A44948AAB3A}|Laba9.Tests\\Laba9.Tests.csproj|solutionrelative:laba9.tests\\assertex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "DockedWidth": 41,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,65 +18,17 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AssertEx.cs",
-              "DocumentMoniker": "D:\\repositories\\RIS_25_3B_ShlenskiyV_OOP\\9 laba\\Laba9\\Laba9.Tests\\AssertEx.cs",
-              "RelativeDocumentMoniker": "Laba9.Tests\\AssertEx.cs",
-              "ToolTip": "D:\\repositories\\RIS_25_3B_ShlenskiyV_OOP\\9 laba\\Laba9\\Laba9.Tests\\AssertEx.cs",
-              "RelativeToolTip": "Laba9.Tests\\AssertEx.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwB0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T13:34:20.584Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProgramTests.cs",
-              "DocumentMoniker": "D:\\repositories\\RIS_25_3B_ShlenskiyV_OOP\\9 laba\\Laba9\\Laba9.Tests\\ProgramTests.cs",
-              "RelativeDocumentMoniker": "Laba9.Tests\\ProgramTests.cs",
-              "ToolTip": "D:\\repositories\\RIS_25_3B_ShlenskiyV_OOP\\9 laba\\Laba9\\Laba9.Tests\\ProgramTests.cs",
-              "RelativeToolTip": "Laba9.Tests\\ProgramTests.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAmwD8AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T13:33:51.608Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TimeArrayTests.cs",
-              "DocumentMoniker": "D:\\repositories\\RIS_25_3B_ShlenskiyV_OOP\\9 laba\\Laba9\\Laba9.Tests\\TimeArrayTests.cs",
-              "RelativeDocumentMoniker": "Laba9.Tests\\TimeArrayTests.cs",
-              "ToolTip": "D:\\repositories\\RIS_25_3B_ShlenskiyV_OOP\\9 laba\\Laba9\\Laba9.Tests\\TimeArrayTests.cs",
-              "RelativeToolTip": "Laba9.Tests\\TimeArrayTests.cs",
-              "ViewState": "AgIAAK4AAAAAAAAAAAAmwMAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T13:33:23.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TimeTests.cs",
-              "DocumentMoniker": "D:\\repositories\\RIS_25_3B_ShlenskiyV_OOP\\9 laba\\Laba9\\Laba9.Tests\\TimeTests.cs",
-              "RelativeDocumentMoniker": "Laba9.Tests\\TimeTests.cs",
-              "ToolTip": "D:\\repositories\\RIS_25_3B_ShlenskiyV_OOP\\9 laba\\Laba9\\Laba9.Tests\\TimeTests.cs",
-              "RelativeToolTip": "Laba9.Tests\\TimeTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T13:32:31.708Z",
-              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 1176,
+          "DockedWidth": 1335,
           "SelectedChildIndex": -1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{905da7d1-18fd-4a46-8d0f-a5ff58ada9de}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
