@@ -3,7 +3,8 @@
   "WorkspaceRootPath": "D:\\repositories\\RIS_25_3B_ShlenskiyV_OOP\\10 laba\\PlacesLib\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7889FFB8-663A-4BD3-BD4B-7CCA72F3E9B0}|..\\Laba10\\Laba10.csproj|d:\\repositories\\ris_25_3b_shlenskiyv_oop\\10 laba\\laba10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86130268-BAD8-45E4-91F6-661602E345C7}|PlacesLib.csproj|d:\\repositories\\ris_25_3b_shlenskiyv_oop\\10 laba\\placeslib\\placeslib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86130268-BAD8-45E4-91F6-661602E345C7}|PlacesLib.csproj|solutionrelative:placeslib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,14 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\repositories\\RIS_25_3B_ShlenskiyV_OOP\\10 laba\\Laba10\\Program.cs",
-              "RelativeDocumentMoniker": "..\\Laba10\\Program.cs",
-              "ToolTip": "D:\\repositories\\RIS_25_3B_ShlenskiyV_OOP\\10 laba\\Laba10\\Program.cs",
-              "RelativeToolTip": "..\\Laba10\\Program.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAYwGIAAABCAAAAAAAAAA==",
+              "Title": "PlacesLib.cs",
+              "DocumentMoniker": "D:\\repositories\\RIS_25_3B_ShlenskiyV_OOP\\10 laba\\PlacesLib\\PlacesLib.cs",
+              "RelativeDocumentMoniker": "PlacesLib.cs",
+              "ToolTip": "D:\\repositories\\RIS_25_3B_ShlenskiyV_OOP\\10 laba\\PlacesLib\\PlacesLib.cs",
+              "RelativeToolTip": "PlacesLib.cs",
+              "ViewState": "AgIAAMkBAAAAAAAAAAAswA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-06T08:20:04.04Z",
+              "WhenOpened": "2026-11-06T11:11:14.861Z",
               "EditorCaption": ""
             }
           ]
