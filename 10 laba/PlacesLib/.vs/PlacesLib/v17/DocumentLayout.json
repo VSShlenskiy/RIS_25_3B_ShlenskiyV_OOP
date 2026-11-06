@@ -1,0 +1,62 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\repositories\\RIS_25_3B_ShlenskiyV_OOP\\10 laba\\PlacesLib\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7889FFB8-663A-4BD3-BD4B-7CCA72F3E9B0}|..\\Laba10\\Laba10.csproj|d:\\repositories\\ris_25_3b_shlenskiyv_oop\\10 laba\\laba10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 41,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\repositories\\RIS_25_3B_ShlenskiyV_OOP\\10 laba\\Laba10\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Laba10\\Program.cs",
+              "ToolTip": "D:\\repositories\\RIS_25_3B_ShlenskiyV_OOP\\10 laba\\Laba10\\Program.cs",
+              "RelativeToolTip": "..\\Laba10\\Program.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAYwGIAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T08:20:04.04Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1335,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{905da7d1-18fd-4a46-8d0f-a5ff58ada9de}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

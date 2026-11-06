@@ -1,0 +1,12 @@
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\10 laba\PlacesLib\bin\Debug\net8.0\PlacesLib.deps.json
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\10 laba\PlacesLib\bin\Debug\net8.0\PlacesLib.dll
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\10 laba\PlacesLib\bin\Debug\net8.0\PlacesLib.pdb
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\10 laba\PlacesLib\obj\Debug\net8.0\PlacesLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\10 laba\PlacesLib\obj\Debug\net8.0\PlacesLib.AssemblyInfoInputs.cache
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\10 laba\PlacesLib\obj\Debug\net8.0\PlacesLib.AssemblyInfo.cs
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\10 laba\PlacesLib\obj\Debug\net8.0\PlacesLib.csproj.CoreCompileInputs.cache
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\10 laba\PlacesLib\obj\Debug\net8.0\PlacesLib.sourcelink.json
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\10 laba\PlacesLib\obj\Debug\net8.0\PlacesLib.dll
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\10 laba\PlacesLib\obj\Debug\net8.0\refint\PlacesLib.dll
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\10 laba\PlacesLib\obj\Debug\net8.0\PlacesLib.pdb
+D:\repositories\RIS_25_3B_ShlenskiyV_OOP\10 laba\PlacesLib\obj\Debug\net8.0\ref\PlacesLib.dll
