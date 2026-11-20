@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PlacesLib")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3e9ee004773ad208602dbbd1f1dd002e6c245aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5f573e8d654c0d58b616257eee716f250d43787")]
 [assembly: System.Reflection.AssemblyProductAttribute("PlacesLib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PlacesLib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

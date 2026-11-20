@@ -35,6 +35,11 @@ namespace PlacesLib
             Console.WriteLine($"[Place] {name}");
         }
 
+        public override string ToString()
+        {
+            return name;
+        }
+
         public virtual void Init()
         {
             Console.Write("Название: ");
@@ -151,6 +156,11 @@ namespace PlacesLib
             Console.WriteLine($"[Address] {name}");
         }
 
+        public override string ToString()
+        {
+            return $"{name}; {cityName}; {street}; {house}; {flat}";
+        }
+
         public override void Init()
         {
             base.Init();
@@ -242,6 +252,11 @@ namespace PlacesLib
             Console.WriteLine($"[City] {name}");
         }
 
+        public override string ToString()
+        {
+            return $"{name}; {population}; {foundationYear}; {regionName}";
+        }
+
         public override void Init()
         {
             base.Init();
@@ -321,6 +336,16 @@ namespace PlacesLib
         public new void ShowNonVirtual()
         {
             Console.WriteLine($"[Megacity] {name}");
+        }
+
+        public override string ToString()
+        {
+            return $"{name}; {population}; {foundationYear}; {regionName}; {metroStations}; {districts}";
+        }
+
+        public City BaseCity
+        {
+            get { return new City(name, population, foundationYear, regionName); }
         }
 
         public override void Init()
@@ -417,6 +442,11 @@ namespace PlacesLib
         public new void ShowNonVirtual()
         {
             Console.WriteLine($"[Region] {name}");
+        }
+
+        public override string ToString()
+        {
+            return $"{name}; {population}; {area}; {districts}; {string.Join(",", cityNames)}";
         }
 
         public override void Init()
